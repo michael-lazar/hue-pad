@@ -75,5 +75,5 @@ using their unique IDs.
 License
 -------
 
-This project is distributed under the (MIT)[https://github.com/michael-lazar/hue-pad/blob/master/LICENSE] license.
+This project is distributed under the [MIT](https://github.com/michael-lazar/hue-pad/blob/master/LICENSE) license.
 
