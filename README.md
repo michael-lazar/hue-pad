@@ -12,7 +12,7 @@ $ cd hue-pad
 $ python setup.py install
 ```
 
-Register the systemd service (optional)
+Register a systemd service to launch the script at system boot (optional)
 
 ```bash
 $ sudo cp hue-pad.service /etc/systemd/system
