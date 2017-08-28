@@ -1,8 +1,8 @@
 # Hue Pad
 Control Philips Hue Lights with a MIDI Pad Controller
 
-Install
--------
+Installation
+------------
 
 Install the python script
 
