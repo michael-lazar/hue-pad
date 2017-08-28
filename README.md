@@ -9,7 +9,7 @@ Install the python script
 ```bash
 $ git clone https://github.com/michael-lazar/hue-pad.git
 $ cd hue-pad
-$ python setup.py install
+$ pip install .
 ```
 
 Register a systemd service to launch at startup (optional)
