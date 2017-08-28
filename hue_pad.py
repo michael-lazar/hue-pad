@@ -351,6 +351,8 @@ def main(debug, hue_ip, db_file, light_ids):
         controller.loop_forever()
     except KeyboardInterrupt:
         pass
+    except Exception as e:
+        _logger.error(e)
 
     thread.active = False
     thread.join()
