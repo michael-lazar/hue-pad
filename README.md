@@ -1,8 +1,47 @@
 # Hue Pad
 Control Philips Hue Lights with a MIDI Pad Controller
 
-Parts
+Install
+-------
+
+Install the python script
+
+```bash
+$ git clone https://github.com/michael-lazar/hue-pad.git
+$ cd hue-pad
+$ python setup.py install
+```
+
+Register the systemd service (optional)
+
+```bash
+$ sudo cp hue-pad.service /etc/systemd/system
+$ sudo systemctl daemon-reload
+$ sudo systemctl enable hue-pad.service
+$ sudo systemctl start hue-pad.service
+```
+
+Usage
 -----
+```
+Usage: hue-pad [OPTIONS]
+
+  Control lighting effects with a MIDI Pad Controller.
+
+  This script will watch for incoming MIDI events from an Akai LPD8 and use
+  them to update lighting/color effects through a Philips Hue Bridge.
+
+Options:
+  --debug / --no-debug  Enable verbose logging.
+  --hue-ip TEXT         IP address of the Philips Hue Bridge.
+  --db-file TEXT        JSON file with lighting scene data.
+  --light-ids TEXT      Comma separated list of light IDs to control.
+                        [default: 1,2]
+  --help                Show this message and exit.
+```
+
+Components
+----------
 
 <table>
   <tr>
@@ -32,26 +71,6 @@ are built into the firmware. However, accessing and storing these
 settings introduces a noticeable latency when using the MIDI controller.
 Therefore, this application only stores and sends commands to lights
 using their unique IDs.
-
-Installation
-------------
-
-Install the python script
-
-```bash
-$ git clone https://github.com/michael-lazar/hue-pad.git
-$ cd hue-pad
-$ python setup.py install
-```
-
-Register the systemd service
-
-```bash
-$ sudo cp hue-pad.service /etc/systemd/system
-$ sudo systemctl daemon-reload
-$ sudo systemctl enable hue-pad.service
-$ sudo systemctl start hue-pad.service
-```
 
 License
 -------
