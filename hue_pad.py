@@ -324,7 +324,7 @@ class LightMonitorThread(threading.Thread):
 @click.option('--hue-ip', default='10.0.0.33', help='IP address of the Philips Hue Bridge.')
 @click.option('--db-file', default=DEFAULT_DATABASE, help='JSON file with lighting scene data.')
 @click.option('--light-ids', default='1,2', show_default=True, help='Comma separated list of light IDs to control.')
-def main(debug, hue_ip, db, light_ids):
+def main(debug, hue_ip, db_file, light_ids):
     """
     Control lighting effects with a MIDI Pad Controller.
 
@@ -345,7 +345,7 @@ def main(debug, hue_ip, db, light_ids):
     thread.start()
 
     device = init_lpd8()
-    controller = MidiController(device, bridge, thread.queue, db, light_ids)
+    controller = MidiController(device, bridge, thread.queue, db_file, light_ids)
 
     try:
         controller.loop_forever()
