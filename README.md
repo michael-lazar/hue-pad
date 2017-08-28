@@ -1,6 +1,63 @@
 # Hue Pad
 Control Philips Hue Lights with a MIDI Pad Controller
 
+Installation
+------------
+
+Install the python script
+
+```bash
+$ git clone https://github.com/michael-lazar/hue-pad.git
+$ cd hue-pad
+$ python setup.py install
+```
+
+Register a systemd service to launch the script during system boot (optional)
+
+```bash
+$ sudo cp hue-pad.service /etc/systemd/system
+$ sudo systemctl daemon-reload
+$ sudo systemctl enable hue-pad.service
+$ sudo systemctl start hue-pad.service
+```
+
+Usage
+-----
+```
+Usage: hue-pad [OPTIONS]
+
+  Control lighting effects with a MIDI Pad Controller.
+
+  This script will watch for incoming MIDI events from an Akai LPD8 and use
+  them to update lighting/color effects through a Philips Hue Bridge.
+
+Options:
+  --debug / --no-debug  Enable verbose logging.
+  --hue-ip TEXT         IP address of the Philips Hue Bridge.
+  --db-file TEXT        JSON file with lighting scene data.
+  --light-ids TEXT      Comma separated list of light IDs to control.
+                        [default: 1,2]
+  --help                Show this message and exit.
+```
+
+Components
+----------
+
+<table>
+  <tr>
+    <td><a href="http://www.akaipro.com/products/pad-controllers/lpd-8">Akai LPDD8 Laptop Pad Controller</a></td>
+    <td align="center"><img src="https://github.com/michael-lazar/hue-pad/blob/master/images/lpd8.png" height=200></img></td>
+  </tr>
+  <tr>
+    <td><a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/">Raspberry Pi 3</a></td>
+    <td align="center"><img src="https://github.com/michael-lazar/hue-pad/blob/master/images/raspberry_pi_3.png" height=200></img></td>
+  </tr>
+  <tr>
+    <td><a href="http://www2.meethue.com/en-us/p/046677456214">Philips Hue Starter Kit</a></td>
+    <td align="center"><img src="https://github.com/michael-lazar/hue-pad/blob/master/images/hue_light.png" height=200></img></td>
+  </tr>
+</table>
+
 Database
 --------
 
@@ -15,27 +72,8 @@ settings introduces a noticeable latency when using the MIDI controller.
 Therefore, this application only stores and sends commands to lights
 using their unique IDs.
 
-Installation
-------------
-
-Install the python script
-
-```bash
-$ git clone https://github.com/michael-lazar/hue-pad.git
-$ cd hue-pad
-$ python setup.py install
-```
-
-Register the systemd service
-
-```bash
-$ sudo cp hue-pad.service /etc/systemd/system
-$ sudo systemctl daemon-reload
-$ sudo systemctl enable hue-pad.service
-$ sudo systemctl start hue-pad.service
-```
-
 License
 -------
 
-MIT
+This project is distributed under the [MIT](https://github.com/michael-lazar/hue-pad/blob/master/LICENSE) license.
+
