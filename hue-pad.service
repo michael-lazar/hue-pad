@@ -1,0 +1,11 @@
+[Unit]
+Description=Control Philips Hue Lights with a MIDI Pad Controller
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=5
+ExecStart=/usr/local/bin/hue-pad
+
+[Install]
+WantedBy=default.target
