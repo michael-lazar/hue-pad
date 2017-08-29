@@ -2,6 +2,22 @@
 
 **Control Philips Hue Lights with a MIDI Pad Controller**
 
+This is a project that I created to control the lights in my office. It is designed to run on a Raspberry Pi 3, but it could also be installed on a laptop or any other device with wifi and USB.
+
+Video demonstration forthcoming.
+
+Controls
+--------
+
+<dl>
+  <dt>Knobs 1-8</dt>
+  <dd>The knobs are used to control the brightness, hue, and color temperature of the lights.</dd>
+  <dt>Pads 1-8</dt>
+  <dd>Each pad is bound to a lighting <em>scene</em>, which defines the color & brightness of one or more lights. Tapping on a pad will activate its scene, and holding down a pad can be used to re-program a scene.
+</dl>
+
+See the [code](https://github.com/michael-lazar/hue-pad/blob/master/hue_pad.py) for more details
+
 Components
 ----------
 
@@ -42,6 +58,7 @@ $ sudo systemctl start hue-pad.service
 
 Usage
 -----
+
 ```
 Usage: hue-pad [OPTIONS]
 
