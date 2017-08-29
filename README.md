@@ -16,7 +16,7 @@ Controls
   <dd>Each pad is bound to a lighting <em>scene</em>, which defines the color & brightness of one or more lights. Tapping on a pad will activate its scene, and holding down a pad can be used to re-program a scene.
 </dl>
 
-See the [code](https://github.com/michael-lazar/hue-pad/blob/master/hue_pad.py) for more details
+See the [code](https://github.com/michael-lazar/hue-pad/blob/master/hue_pad.py) for more details.
 
 Components
 ----------
