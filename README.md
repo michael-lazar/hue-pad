@@ -1,4 +1,4 @@
-# <div style="align: center"><img src="https://github.com/michael-lazar/hue-pad/blob/master/images/logo.png"></img></div>
+# <p align="center"><img src="https://github.com/michael-lazar/hue-pad/blob/master/images/logo.png"></img></p>
 
 Control Philips Hue Lights with a MIDI Pad Controller
 
