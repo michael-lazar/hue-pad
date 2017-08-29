@@ -1,6 +1,6 @@
 # <p align="center"><img src="https://github.com/michael-lazar/hue-pad/blob/master/images/logo.png"></img></p>
 
-**Control your Hue Lights with a MIDI Pad Controller**
+**Control Philips Hue Lights with a MIDI Pad Controller**
 
 Installation
 ------------
