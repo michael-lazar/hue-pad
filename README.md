@@ -76,8 +76,8 @@ Options:
   --help                Show this message and exit.
 ```
 
-Database
---------
+Scenes
+------
 
 Every pad on the LPD8 can be programmed to store a different lighting
 "scene". A lighting scene consists of brightness & color values for
