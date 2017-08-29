@@ -47,15 +47,15 @@ Components
 <table>
   <tr>
     <td><a href="http://www.akaipro.com/products/pad-controllers/lpd-8">Akai LPDD8 Laptop Pad Controller</a></td>
-    <td align="center"><img src="https://github.com/michael-lazar/hue-pad/blob/master/images/lpd8.png" height=200></img></td>
+    <td align="center"><img src="https://github.com/michael-lazar/hue-pad/blob/master/images/lpd8.png" height=100></img></td>
   </tr>
   <tr>
     <td><a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/">Raspberry Pi 3</a></td>
-    <td align="center"><img src="https://github.com/michael-lazar/hue-pad/blob/master/images/raspberry_pi_3.png" height=200></img></td>
+    <td align="center"><img src="https://github.com/michael-lazar/hue-pad/blob/master/images/raspberry_pi_3.png" height=100></img></td>
   </tr>
   <tr>
     <td><a href="http://www2.meethue.com/en-us/p/046677456214">Philips Hue Starter Kit</a></td>
-    <td align="center"><img src="https://github.com/michael-lazar/hue-pad/blob/master/images/hue_light.png" height=200></img></td>
+    <td align="center"><img src="https://github.com/michael-lazar/hue-pad/blob/master/images/hue_light.png" height=100></img></td>
   </tr>
 </table>
 
